@@ -1,0 +1,31 @@
+company,website,status,note,completed_date
+VERISURE,https://www.verisure.com/,done,,2026-07-11
+VERTEX AEROSPACE,https://www.vertexaerospace.com/,needs_review,"Reports under parent V2X Inc (2022 merger); V2X 2025 Annual Report collected but contains no Scope 1/2 figures — parent/subsidiary + no-disclosure ruling needed",2026-07-11
+VFS GLOBAL,https://www.vfsglobal.com/,done,,2026-07-11
+VICTORY CAPITAL,https://www.vcm.com/,done,"Company states it does not yet report Scope 1/2 (starts 2026 per SB 219)",2026-07-11
+VIRGIN MEDIA IRELAND,https://www.virginmedia.ie/,needs_review,"Values sourced from parent Liberty Global report (People Planet Progress 2025 p.35, KPMG-assured VMI breakout) — parent-sourced values always need human review; 2024 edition initially collected in error, replaced",2026-07-11
+VIRTU FINANCIAL,https://www.virtu.com/,done,"No ESG/GHG disclosure found; site liveness confirmed",2026-07-11
+VIRTUSA,https://www.virtusa.com/,done,,2026-07-11
+VIVALTO SANTE INVESTISSEMENT,https://www.vivalto-sante.com/,done,"Rapport de mission collected; qualitative only, no absolute Scope 1/2 figures",2026-07-11
+VIVID SEATS,https://www.vividseats.com/,needs_review,"Measures Scope 1/2 but absolute figures only in an ESG Factsheet hosted on scribd (banned aggregator); CR-hub screenshot collected — human ruling needed on permitted source",2026-07-11
+WARNER MUSIC GROUP,https://www.wmg.com/,done,,2026-07-11
+WASSERMAN,https://www.teamwass.com/,needs_review,"Rebrand ruling: teamwass.com now 'The Team' (the.team) — identity needs human confirmation; successor site publishes only an IFRS S2 climate-risk report with no absolute Scope 1/2 figures",2026-07-11
+WEBER STEPHEN PRODUCTS LLC,https://www.weber.com/,done,,2026-07-11
+WELLA,https://www.wellacompany.com/,done,,2026-07-11
+WESTINGHOUSE,https://www.westinghousenuclear.com/,done,,2026-07-11
+WESTJET,https://www.westjet.com/,done,"intensity-only; no absolute figures published",2026-07-11
+WHATABURGER,https://whataburger.com/,done,,2026-07-11
+"WHITE CAP BUYER, LLC",https://www.whitecap.com/,done,,2026-07-11
+WIDE OPEN WEST,https://www.wowway.com/,done,"2022 ESG report qualitative only — no Scope 1/2 figures",2026-07-11
+WILSONART,https://www.wilsonart.com/,needs_review,"PDF download 403 bot-blocked after retries — no deliverable on disk; values proxy-extracted and NOT visually confirmed; needs manual download + verification",2026-07-11
+WINDSTREAM,https://www.windstream.com/,needs_review,"Reports under parent Uniti Group post Aug-2025 merger; group-level report collected, no Windstream breakout",2026-07-11
+WOOD MACKENZIE,https://www.woodmac.com/,done,,2026-07-11
+WORKDAY,https://www.workday.com/,done,,2026-07-11
+WORLDPAY,https://www.worldpay.com/,needs_review,"Carbon Reduction Plan covers UK operations only (post-FIS separation); PDF host bot-blocks download — markdown extract saved, no original PDF on disk",2026-07-11
+XELLA,https://www.xella.com/,done,,2026-07-11
+XLERATE,https://www.xlerategroup.com/,needs_review,"Rebrand ruling: xlerategroup.com 301s to americasaa.com (America's Auto Auction); successor site alive with no ESG/emissions content — identity needs human confirmation",2026-07-11
+XSYS,https://www.xsysglobal.com/,needs_review,"Doubtful no-disclosure: CDP Climate B score (Feb 2026) proves climate reporting exists but no public Scope 1/2 figures on site",2026-07-11
+YOUR.WORLD,https://www.your.world/,needs_review,"Doubtful no-disclosure: private Dutch holding (Strikwerda Investments), site alive, no ESG/CO2 content found",2026-07-11
+ZAYO,https://www.zayo.com/,done,,2026-07-11
+ZENTIVA,https://www.zentiva.com/,done,,2026-07-11
+ZIGGO BV,https://www.ziggo.nl/,needs_review,"Reports under parent VodafoneZiggo (Vodafone/Liberty Global JV); group Integrated Annual Report 2025 collected (2024 edition initially collected in error, replaced), Ziggo BV not broken out",2026-07-11

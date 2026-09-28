@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GHG emission crawler</title>
+<style>
+  :root {
+    --surface-0: #fbfaf8;
+    --surface-card: #f5f4f1;
+    --surface-1: #ffffff;
+    --border: #e6e3dd;
+    --border-strong: #d5d1c8;
+    --text-primary: #201f1d;
+    --text-secondary: #66625b;
+    --text-muted: #9c978d;
+    --text-accent: #2f6df0;
+    --border-accent: #a9c6fb;
+    --bg-accent: #eef4ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --surface-0: #171614;
+      --surface-card: #1c1b19;
+      --surface-1: #23211f;
+      --border: #35322c;
+      --border-strong: #46423a;
+      --text-primary: #ededea;
+      --text-secondary: #aca79d;
+      --text-muted: #7b766c;
+      --text-accent: #7ba3f9;
+      --border-accent: #3a5591;
+      --bg-accent: #23293c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --surface-0: #171614;
+    --surface-card: #1c1b19;
+    --surface-1: #23211f;
+    --border: #35322c;
+    --border-strong: #46423a;
+    --text-primary: #ededea;
+    --text-secondary: #aca79d;
+    --text-muted: #7b766c;
+    --text-accent: #7ba3f9;
+    --border-accent: #3a5591;
+    --bg-accent: #23293c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--surface-0);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 2.5rem 1.25rem 3.5rem; }
+  header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+  h1 { font-size: 22px; font-weight: 500; margin: 0 0 .25rem; letter-spacing: -0.01em; }
+  .sub { color: var(--text-secondary); font-size: 14px; margin: 0 0 1.5rem; }
+  .card {
+    background: var(--surface-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.25rem 1rem;
+    overflow-x: auto;
+  }
+  svg { display: block; width: 100%; height: auto; max-width: 720px; margin: 0 auto; }
+
+  /* SVG theming via classes — var() in a <style> block resolves in every browser,
+     unlike var() inside SVG presentation attributes (fill="var(--x)"), which does not. */
+  .dgm-box   { fill: var(--surface-1); stroke: var(--border); }
+  .dgm-acc   { fill: var(--bg-accent); stroke: var(--border-accent); }
+  .dgm-loop  { fill: var(--bg-accent); stroke: var(--border-accent); }
+  .t-pri     { fill: var(--text-primary); }
+  .t-sec     { fill: var(--text-secondary); }
+  .t-mut     { fill: var(--text-muted); }
+  .t-acc     { fill: var(--text-accent); }
+  .dgm-arrow { stroke: var(--text-muted); fill: none; }
+  .dgm-head  { fill: var(--text-muted); }
+
+  .notes { margin-top: 1.5rem; font-size: 13.5px; color: var(--text-secondary); }
+  .notes b { font-weight: 500; color: var(--text-primary); }
+  .notes ul { margin: .5rem 0 0; padding-left: 1.1rem; }
+  .notes li { margin: .3rem 0; }
+  code {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+    font-size: 0.88em;
+    background: var(--bg-accent);
+    color: var(--text-accent);
+    padding: 0.05em 0.35em;
+    border-radius: 5px;
+  }
+  button#themeToggle {
+    flex: none;
+    font: inherit; font-size: 13px;
+    color: var(--text-secondary);
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: .35rem .7rem;
+    cursor: pointer;
+  }
+  button#themeToggle:hover { border-color: var(--border-strong); color: var(--text-primary); }
+
+  /* Print / PDF: light, no UI chrome, whole diagram on one page */
+  @page { size: A4 portrait; margin: 12mm; }
+  @media print {
+    :root { color-scheme: light; }
+    body { background: #ffffff; }
+    #themeToggle { display: none !important; }
+    .wrap { max-width: none; padding: 0; }
+    .card { border: none; background: transparent; padding: 0; overflow: visible; break-inside: avoid; }
+    svg { width: auto; height: 200mm; max-width: 100%; }
+    .notes { break-inside: avoid; margin-top: 8mm; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>GHG emission crawler</h1>
+      <p class="sub">From input CSV to the Excel report. Claude Code is the runtime; the filesystem is the database.</p>
+    </div>
+    <button id="themeToggle" aria-label="Toggle colour theme">☾ Dark</button>
+  </header>
+
+  <div class="card">
+    <svg width="100%" viewBox="0 0 680 864" role="img" xmlns="http://www.w3.org/2000/svg">
+    <title>Firecrawl ESG pipeline: from input CSV to the Excel report</title>
+    <desc>A vertical flow. A batch CSV becomes a queue, an orchestrator fans work to parallel worker subagents, each worker runs a per-company loop (map, filter, scrape, judge, then either screenshot or download PDFs, verify, extract values), the orchestrator writes state and builds an Excel report. A side panel lists the tech stack and design properties.</desc>
+
+    <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto">
+    <path class="dgm-head" d="M0,0 L6.5,3 L0,6 Z"/>
+    </marker>
+    </defs>
+
+    <!-- per-company loop container -->
+    <rect class="dgm-loop" x="44" y="318" width="332" height="300" rx="10" fill-opacity="0.35" stroke-width="1.3" stroke-dasharray="5 4"/>
+    <text class="t-acc" x="57" y="337" font-size="10" font-weight="500">per company · repeats inside every worker</text>
+
+    <!-- B1 input (accent) -->
+    <rect class="dgm-acc" x="60" y="44" width="300" height="44" rx="8"/>
+    <text class="t-acc" x="210" y="63" text-anchor="middle" font-size="12.5" font-weight="500">Batch of companies</text>
+    <text class="t-sec" x="210" y="78" text-anchor="middle" font-size="10.5">input CSV: name · website</text>
+
+    <!-- B2 -->
+    <rect class="dgm-box" x="60" y="112" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="131" text-anchor="middle" font-size="12.5" font-weight="500">Build the queue</text>
+    <text class="t-sec" x="210" y="146" text-anchor="middle" font-size="10.5">gen_queue.py → queue.csv + slices</text>
+
+    <!-- B3 -->
+    <rect class="dgm-box" x="60" y="180" width="300" height="48" rx="8"/>
+    <text class="t-pri" x="210" y="200" text-anchor="middle" font-size="12.5" font-weight="500">Orchestrator · Claude main session</text>
+    <text class="t-sec" x="210" y="216" text-anchor="middle" font-size="10.5">assign slices · credit-gate · write CSVs</text>
+
+    <!-- B4 -->
+    <rect class="dgm-box" x="60" y="252" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="271" text-anchor="middle" font-size="12.5" font-weight="500">Fan out to workers</text>
+    <text class="t-sec" x="210" y="286" text-anchor="middle" font-size="10.5">parallel subagents · ~8–12 cos each</text>
+
+    <!-- B5 -->
+    <rect class="dgm-box" x="60" y="344" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="363" text-anchor="middle" font-size="12.5" font-weight="500">map → filter → scrape → judge</text>
+    <text class="t-sec" x="210" y="378" text-anchor="middle" font-size="10.5">decision: is Scope 1 &amp; 2 on the page?</text>
+
+    <!-- branch labels -->
+    <text class="t-mut" x="158" y="414" text-anchor="middle" font-size="9.5">yes</text>
+    <text class="t-mut" x="264" y="414" text-anchor="middle" font-size="9.5">no</text>
+
+    <!-- B6a -->
+    <rect class="dgm-box" x="62" y="428" width="140" height="46" rx="8"/>
+    <text class="t-pri" x="132" y="447" text-anchor="middle" font-size="12" font-weight="500">Screenshot page</text>
+    <text class="t-sec" x="132" y="461" text-anchor="middle" font-size="10">full-page PNG</text>
+
+    <!-- B6b -->
+    <rect class="dgm-box" x="218" y="428" width="140" height="46" rx="8"/>
+    <text class="t-pri" x="288" y="447" text-anchor="middle" font-size="12" font-weight="500">Download PDFs</text>
+    <text class="t-sec" x="288" y="461" text-anchor="middle" font-size="10">latest year only</text>
+
+    <!-- B7 -->
+    <rect class="dgm-box" x="60" y="500" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="519" text-anchor="middle" font-size="12.5" font-weight="500">Verify evidence</text>
+    <text class="t-sec" x="210" y="534" text-anchor="middle" font-size="10.5">magic bytes · %%EOF · visual check</text>
+
+    <!-- B8 -->
+    <rect class="dgm-box" x="60" y="562" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="581" text-anchor="middle" font-size="12.5" font-weight="500">Extract Scope 1/2 values</text>
+    <text class="t-sec" x="210" y="596" text-anchor="middle" font-size="10.5">pdftotext locate · PyMuPDF confirm</text>
+
+    <!-- B9 -->
+    <rect class="dgm-box" x="60" y="642" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="661" text-anchor="middle" font-size="12.5" font-weight="500">Write state (orchestrator only)</text>
+    <text class="t-sec" x="210" y="676" text-anchor="middle" font-size="10.5">queue flip + results.csv row</text>
+
+    <!-- B10 -->
+    <rect class="dgm-box" x="60" y="710" width="300" height="44" rx="8"/>
+    <text class="t-pri" x="210" y="729" text-anchor="middle" font-size="12.5" font-weight="500">Build the report</text>
+    <text class="t-sec" x="210" y="744" text-anchor="middle" font-size="10.5">openpyxl → .xlsx, after last row</text>
+
+    <!-- B11 output (accent) -->
+    <rect class="dgm-acc" x="60" y="778" width="300" height="52" rx="8"/>
+    <text class="t-acc" x="210" y="800" text-anchor="middle" font-size="12.5" font-weight="500">Deliverables</text>
+    <text class="t-sec" x="210" y="816" text-anchor="middle" font-size="10">results.csv · report.xlsx · companies/ evidence</text>
+
+    <!-- arrows -->
+    <line class="dgm-arrow" x1="210" y1="88" x2="210" y2="111" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="156" x2="210" y2="179" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="228" x2="210" y2="251" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="296" x2="210" y2="317" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="388" x2="210" y2="404" stroke-width="1.5"/>
+    <line class="dgm-arrow" x1="210" y1="404" x2="134" y2="427" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="404" x2="286" y2="427" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="132" y1="474" x2="205" y2="499" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="288" y1="474" x2="215" y2="499" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="544" x2="210" y2="561" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="618" x2="210" y2="641" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="686" x2="210" y2="709" stroke-width="1.5" marker-end="url(#ah)"/>
+    <line class="dgm-arrow" x1="210" y1="754" x2="210" y2="777" stroke-width="1.5" marker-end="url(#ah)"/>
+
+    <!-- right: tech stack card -->
+    <rect class="dgm-box" x="398" y="44" width="242" height="560" rx="10"/>
+    <text class="t-pri" x="414" y="74" font-size="13" font-weight="500">Tech stack</text>
+
+    <text class="t-pri" x="414" y="106" font-size="11" font-weight="500">Reason / orchestrate</text>
+    <text class="t-sec" x="414" y="121" font-size="10.5">Claude Code · Opus 4.8 · subagents</text>
+    <text class="t-pri" x="414" y="168" font-size="11" font-weight="500">Web acquisition</text>
+    <text class="t-sec" x="414" y="183" font-size="10.5">Firecrawl CLI — map·scrape·search</text>
+    <text class="t-pri" x="414" y="230" font-size="11" font-weight="500">Download</text>
+    <text class="t-sec" x="414" y="245" font-size="10.5">curl — PDFs &amp; PNGs (0 credits)</text>
+    <text class="t-pri" x="414" y="292" font-size="11" font-weight="500">PDF &amp; vision</text>
+    <text class="t-sec" x="414" y="307" font-size="10.5">pdftotext (poppler) · PyMuPDF</text>
+    <text class="t-pri" x="414" y="354" font-size="11" font-weight="500">JSON glue</text>
+    <text class="t-sec" x="414" y="369" font-size="10.5">node -e (jq unavailable)</text>
+    <text class="t-pri" x="414" y="416" font-size="11" font-weight="500">State store</text>
+    <text class="t-sec" x="414" y="431" font-size="10.5">queue.csv · results.csv · cache/</text>
+    <text class="t-pri" x="414" y="478" font-size="11" font-weight="500">Report</text>
+    <text class="t-sec" x="414" y="493" font-size="10.5">openpyxl workbook (.xlsx)</text>
+    <text class="t-pri" x="414" y="540" font-size="11" font-weight="500">Runtime</text>
+    <text class="t-sec" x="414" y="555" font-size="10.5">Windows · PowerShell + bash · Python</text>
+
+    <!-- right: design properties card -->
+    <rect class="dgm-box" x="398" y="628" width="242" height="202" rx="10"/>
+    <text class="t-pri" x="414" y="658" font-size="13" font-weight="500">Design properties</text>
+    <text class="t-pri" x="414" y="690" font-size="11" font-weight="500">Resumable</text>
+    <text class="t-sec" x="414" y="705" font-size="10.5">queue.csv state machine</text>
+    <text class="t-pri" x="414" y="736" font-size="11" font-weight="500">Credit-gated</text>
+    <text class="t-sec" x="414" y="751" font-size="10.5">pauses near the credit wall</text>
+    <text class="t-pri" x="414" y="782" font-size="11" font-weight="500">Provenance-strict</text>
+    <text class="t-sec" x="414" y="797" font-size="10.5">no report URL from memory</text>
+    <text class="t-mut" x="414" y="815" font-size="10.5">run-isolated · no cross-run reuse</text>
+
+    <!-- legend -->
+    <text class="t-mut" x="60" y="852" font-size="9.5">Accent fill = start &amp; end · dashed accent box = per-company loop (runs inside every worker)</text>
+    </svg>
+  </div>
+
+  <div class="notes">
+    <b>How to read it.</b>
+    <ul>
+      <li>The left spine is the flow from <code>input CSV</code> to <code>deliverables</code>; the dashed box is the loop that runs once per company, inside every worker.</li>
+      <li>The branch after <b>judge</b> is the decision rule: figures visible on a page → screenshot; otherwise → download the report PDFs.</li>
+      <li>The right panels are the actual tech stack and the properties the design buys you. Only Firecrawl is a paid external service — everything else is local and free.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    var saved = localStorage.getItem('esg-theme');
+    if (saved) root.setAttribute('data-theme', saved);
+    function current() {
+      return root.getAttribute('data-theme')
+        || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    }
+    function label() { btn.textContent = current() === 'dark' ? '☀ Light' : '☾ Dark'; }
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('esg-theme', next);
+      label();
+    });
+    label();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+company,website,status,note,completed_date
+24 HOUR FITNESS,https://www.24hourfitness.com/,needs_review,"Site down (504 Gateway Time-out, two attempts) - retry when site is back up; liveness never confirmed.",2026-07-12
+84 LUMBER,https://www.84lumber.com/,done,,2026-07-12
+ABC SUPPLY,https://www.abcsupply.com/,done,,2026-07-12
+ACCORINVEST,https://group.accorinvest.com/,needs_review,Dead domain: group.accorinvest.com and www.accorinvest.com both fail DNS (curl + Firecrawl). Need current official AccorInvest domain from user; do NOT substitute Accor SA (separate entity).,2026-07-12
+ACRISURE LLC,https://www.acrisure.com/,done,,2026-07-12
+ADB SAFEGATE,https://adbsafegate.com/,done,,2026-07-12
+ADVANCED DRAINAGE SYSTEMS INC,https://www.adspipe.com/,done,,2026-07-12
+ADVANZ PHARMA,https://www.advanzpharma.com/,done,,2026-07-12
+AERNNOVA,https://www.aernnova.com/,done,,2026-07-12
+AFFIDEA,https://www.affidea.com/,done,,2026-07-12
+AGGREKO,https://www.aggreko.com/,done,,2026-07-12
+AGILITI,https://www.agilitihealth.com/,done,,2026-07-12
+AHLSELL,https://www.ahlsell.com/,done,,2026-07-12
+AHLSTROM,https://www.ahlstrom.com/,done,,2026-07-12
+AKZONOBEL,https://www.akzonobel.com/,done,,2026-07-12
+ALIXPARTNERS,https://www.alixpartners.com/,needs_review,Scope 2 basis (market vs location) not stated in report; recorded as location-based (inferred). Confirm basis if a human ruling is desired.,2026-07-12
+ALLEN MEDIA LLC,https://allenmedia.tv/,needs_review,"Unconfirmed no-disclosure: private media company, site live but no ESG/sustainability report exists (map 594 URLs + search show only news). Human confirmation of absence recommended.",2026-07-12
+ALLIANCE LAUNDRY SYSTEMS LLC,https://alliancelaundry.com/,done,,2026-07-12
+ALMAVIVA SANTE,https://www.almaviva-sante.fr/,done,"Combined Scope 1+2 only (10,709.4 tCO2e) based on 2022 BEGES data; company states 2024/2025 consolidated figures not available. Superseded DPEF-2024.pdf remains in folder unused.",2026-07-12
+ALPHAGEN,https://www.alphagen.com/,needs_review,Reports under parent/PE owner ArcLight; group ESG report collected but contains no AlphaGen-specific Scope 1/2 (firm-level figures are ArcLight's own). Values empty; parent/subsidiary case needs human ruling.,2026-07-12
+ALPHIA,https://www.alphia.com/,done,,2026-07-12
+ALTER DOMUS,https://alterdomus.com/,done,,2026-07-12
+ALTICE USA,https://www.alticeusa.com/,needs_review,"PDF download bot-blocked (Akamai 403) after alternate-UA retry; original file not obtainable via curl. Scope 1/2 values were extracted via Firecrawl's parse of the report PDF (2024: S1 43,219 / S2 loc 235,452 / S2 mkt 230,083). Human should obtain/verify the original PDF.",2026-07-12
+ALTIUM PACKAGING LLC,https://www.altiumpkg.com/,done,,2026-07-12
+ALVEST,https://www.alvest.fr/,done,,2026-07-12
+AMAWATERWAYS,https://www.amawaterways.com/,done,,2026-07-12
+AMEDES,https://www.amedes-group.com/,done,,2026-07-12
+AMENTUM,https://www.amentum.com/,needs_review,"Post-merger inaugural report gives no consolidated group total - recorded Scope 1/2 are sums of legacy Amentum + legacy iCMS reported separately (S1 7,380+4,523; S2 loc 2,306 est.+9,816). Human ruling needed on combined-vs-legacy reporting. PDF URL came from search (no live landing page found linking it), though on Amentum's own domain and confirmed latest (no FY25 impact report).",2026-07-12
+AMERICAN AIRLINES,https://www.aa.com/,done,,2026-07-12
+AMERICAN BATH GROUP,https://americanbathgroup.com/,done,,2026-07-12
+AMERICAN TRAFFIC SOLUTIONS,https://www.verramobility.com/,done,,2026-07-12
+AMMEGA,https://www.ammega.com/,done,,2026-07-12
+AMWINS GROUP INC,https://www.amwins.com/,done,,2026-07-12
+AMYNTA,https://www.amyntagroup.com/,done,,2026-07-12
+ANCESTRY.COM,https://www.ancestry.com/,done,,2026-07-12
+ANTICIMEX,https://www.anticimex.com/,done,,2026-07-12
+APCOA,https://www.apcoa.com/,done,,2026-07-12
+APPLEGREEN,https://www.applegreenstores.com/,done,,2026-07-12
+APPLIED SYSTEMS,https://www1.appliedsystems.com/,done,,2026-07-12
+APPLUS,https://www.applus.com/,needs_review,"2024 Sustainability Report is an interactive JS microsite; Scope 1/2 not exposed via scrape and browser access to applus.com blocked. Latest extractable is stale FY2022 (Scope1=46,102; S2 market=9,487; S2 location=17,845). Manual retrieval of 2024 figures from microsite needed.",2026-07-12
+ARAMARK CORP,https://www.aramark.com/,needs_review,Latest 2025 Progress Report is form-gated; collected ungated CDP 2023 with FY2022 data instead (4 yrs old). Human may retrieve gated 2025 report for current figures.,2026-07-12
+ARDONAGH,https://www.ardonagh.com/,done,,2026-07-12
+AREAS,https://areas.com/,done,,2026-07-12
+ARGUS MEDIA,https://www.argusmedia.com/,needs_review,Company measures Scope 1/2 (UK SECR) but publishes no figures on its own website; SECR data is in Companies House statutory accounts. Human may retrieve those if off-site statutory filings are acceptable.,2026-07-12
+ARMACELL,https://www.armacell.com/,done,,2026-07-12
+ARMOR IIMAK,https://www.armor-iimak.com/,needs_review,"Group-level ARMOR GROUP CSR report (no ARMOR-IIMAK-only breakout); Scope 1/2 are percentage-derived from a chart (total x %), not absolute figures; Scope 2 basis inferred; report is 2023 (confirmed latest available on live parent site). Values are group-wide, not subsidiary-specific.",2026-07-12
+ASCENSUS,https://www.ascensus.com/,done,,2026-07-12
+ASMODEE,https://www.asmodee.com/,done,,2026-07-12
+ASPEN DENTAL,https://www.aspendental.com/,done,,2026-07-12
+ASURION LLC,https://www.asurion.com/,done,,2026-07-12
+ATHENA HEALTH,https://www.athenahealth.com/,done,,2026-07-12
+ATKORE INT'L,https://www.atkore.com/,done,"Direct report PDF URL could not be re-derived live (flipbook viewer); source_urls is the live sustainability hub page. File verified genuine, latest confirmed.",2026-07-12
+AUSTIN POWDERS,https://austinpowder.com/,done,,2026-07-12
+AUTHENTIC BRANDS,https://corporate.authentic.com/,done,,2026-07-12
+AVANTOR INC,https://www.avantorsciences.com/,done,,2026-07-12
+AXPLORA,https://www.axplora.com/,done,,2026-07-12
+B&B HOTELS,https://www.hotel-bb.com/,done,"Scope 1/2 derived from percentage split of a rounded 114 kTCO2e total (no absolute tonnes published); coarse/approximate, Medium confidence.",2026-07-12
+BANIJAY,https://group.banijay.com/,done,,2026-07-12
+BARENTZ,https://www.barentz.com/,done,,2026-07-12
+BASS PRO,https://www.basspro.com/,done,,2026-07-12
+BAUSCH & LOMB INC,https://www.bausch.com/,done,,2026-07-12
+BEAUPARC,https://www.beauparc.ie/,done,,2026-07-12
+BERKELEY RESEARCH,https://www.thinkbrg.com/,done,,2026-07-12
+BGIS,https://www.bgis.com/,done,,2026-07-12
+BIOGROUP,https://biogroup.fr/,done,,2026-07-12
+BLACKHAWK NETWORK,https://blackhawknetwork.com/,done,,2026-07-12
+BLOUNT INTERNATIONAL INC,https://www.blount.com/,needs_review,Input domain blount.com rebranded to Oregon Tool; entity identity needs human confirmation. Values from Oregon Tool 2024 ESG Impact Report (visually verified).,2026-07-12
+BMC SOFTWARE,https://www.bmc.com/,needs_review,Scope 1/2 shown only as a non-linear-axis bar chart with no printed values; figures not extractable without CDP scorecard request. Human ruling needed.,2026-07-12
+BOOTS,https://www.boots.com/,done,,2026-07-12
+BOWLERO,https://www.bowlerocorp.com/,needs_review,"No ESG/GHG disclosure found on live bowlerocorp.com (site alive, no sustainability section); public company - verify IR site / SEC filings before finalizing no-disclosure.",2026-07-12
+BRIGHTSPRING HEALTH,https://www.brightspringhealth.com/,done,,2026-07-12
+BROOKS AUTOMATION,https://www.brooks.com/,done,,2026-07-12
+BURGER KING FRANCE,https://www.burgerking.fr/,done,,2026-07-12
+CACI,https://www.caci.com/,done,,2026-07-12
+CAESARS,https://www.caesars.com/,done,,2026-07-12
+CALDIC,https://www.caldic.com/,done,,2026-07-12
+CALPINE CORP,https://www.calpine.com/,done,,2026-07-12
+CAMPING WORLD,https://www.campingworld.com/,done,,2026-07-12
+CEGID,https://www.cegid.com/,done,,2026-07-12
+CENTRIENT,https://centrient.com/,done,,2026-07-12
+CERAMTEC,https://www.ceramtec-group.com/,done,,2026-07-12
+CERBA HEALTHCARE,https://www.cerbahealthcare.com/,done,,2026-07-12
+CERELIA,https://www.cerelia.com/,done,,2026-07-12
+CETERA,https://www.cetera.com/,done,,2026-07-12
+CH GUENTHER,https://chg.com/,done,,2026-07-12
+CHAMBERLAIN,https://www.chamberlaingroup.com/,done,,2026-07-12
+CHARTER COMMUNICATIONS,https://corporate.charter.com/,done,,2026-07-12
+CHEPLAPHARM,https://www.cheplapharm.com/,done,,2026-07-12
+CHG HEALTHCARE SERVICES,https://chghealthcare.com/,done,,2026-07-12
+CHOBANI,https://www.chobani.com/,needs_review,Major private company but only public emissions evidence is a 2019 impact report with reduction/target figures (no absolutes) and a narrative-only current site (2024 energy audits) - possible newer non-public disclosure; verify whether Chobani reports absolute Scope 1/2 anywhere current.,2026-07-12
+CIENA,https://www.ciena.com/,done,,2026-07-12
+CIRCET,https://www.circet.com/,done,,2026-07-12
+CLARIVATE,https://clarivate.com/,done,Direct PDF download URL not re-captured in this run's cache; report identity and latest-status confirmed live (news release + visual footer).,2026-07-12
+CLOUDERA INC,https://www.cloudera.com/,needs_review,"Disclosure covers only UK subsidiary (Cloudera UK Limited), not the global group; latest-year (2024) figures are 0/0. Confirm whether global Cloudera reports elsewhere.",2026-07-12
+COGNITA,https://www.cognita.com/,done,,2026-07-12
+COLOSSEUM DENTAL,https://www.colosseumdental.com/,needs_review,"No ESG/emissions disclosure on company site (map=50 URLs, home+governance live-scraped, zero environmental content). Large multi-country dental group - confirm no group/parent-level report exists.",2026-07-12
+CONCENTRA,https://www.concentra.com/,done,,2026-07-12
+CONVERGINT TECH,https://www.convergint.com/,done,,2026-07-12
+COPELAND,https://www.copeland.com/,done,,2026-07-12
+CORE & MAIN LP,https://www.coreandmain.com/,needs_review,2022 ESG report (latest available) is qualitative only - no absolute Scope 1/2 figures (full text checked via Firecrawl). Raw PDF download WAF-blocked (403); no file saved.,2026-07-12
+CORELOGIC INC,https://www.corelogic.com/,needs_review,Input domain corelogic.com rebranded to Cotality (cotality.com); identity needs human confirmation. Report is qualitative - no absolute Scope 1/2 figures published.,2026-07-12
+CORIALIS,https://www.corialis-group.com/,done,,2026-07-12
+CORNERSTONE ONDEMAND,https://www.cornerstoneondemand.com/,done,,2026-07-12
+CORPORATION SERVICE COMPANY,https://www.cscglobal.com/,done,,2026-07-12
+CRANE NXT,https://www.cranenxt.com/,done,,2026-07-12
+CREATIVE PLANNING,https://creativeplanning.com/,done,,2026-07-12
+CULLIGAN,https://www.culligan.com/,done,,2026-07-12
+CURRENTA,https://www.currenta.com/,needs_review,Input domain currenta.com redirects to currenta.de. No sustainability/ESG report or Scope 1/2 figures on own site despite thorough map+search; doubtful no-disclosure for a large chemical-park operator (Chempark) - human check advised.,2026-07-12
+CUSHMAN & WAKEFIELD,https://www.cushmanwakefield.com/,needs_review,"2025 Sustainability Report is a bot-blocked/non-scrapeable JS flipbook with no downloadable PDF; sustainability page shows only reductions/targets. Absolute Scope 1/2 figures need manual reading of the flipbook (digital.cushmanwakefield.com/2025-sustainability-report, ~84 pp).",2026-07-12
+DATASITE,https://www.datasite.com/,done,,2026-07-12
+DAVE AND BUSTERS INC,https://www.daveandbusters.com/,done,,2026-07-12
+DAVID LLOYD,https://www.davidlloyd.co.uk/,done,,2026-07-12
+DAYFORCE,https://www.dayforce.com/,done,,2026-07-12
+DEALER TIRE,https://www.dealertire.com/,done,,2026-07-12
+DECHRA PHARMACEUTICALS,https://www.dechra.com/,done,,2026-07-12
+DIAMOND SPORTS GROUP,https://www.diamond-sports.com/,needs_review,"Given domain diamond-sports.com hosts a baseball/softball equipment maker, not the RSN 'Diamond Sports Group' (Bally/FanDuel Sports Network). Confirm intended entity/domain before finalizing.",2026-07-12
+DONTE GROUP,https://dontegroup.com/,done,,2026-07-12
+DORNA,https://www.dorna.com/,done,,2026-07-12
+DOTDASH MEREDITH,https://www.dotdashmeredith.com/,needs_review,"Reports under parent People Inc (formerly IAC); 2025 group GHG report has no Dotdash Meredith breakout (group S1=3,334, S2 loc=6,365, S2 mkt=6,764 tCO2e). Binary PDF bot-blocked by Q4 CDN - evidence is Firecrawl-rendered content, not original file. Human ruling on attributing group figures + non-original evidence.",2026-07-12
+EDELMAN FINANCIAL,https://www.edelmanfinancialengines.com/,done,,2026-07-12
+EDILIANS,https://edilians.com/,done,Index-only reporter; no absolute Scope 1/2 figures published.,2026-07-12
+EG GROUP,https://www.eg.group/,done,,2026-07-12
+EIRCOM,https://www.eir.ie/,needs_review,"No absolute Scope 1/2 figures published on eir.ie or in its sole ESG doc (2022 strategy, target/narrative only). Doubtful no-disclosure for a large telecom - confirm eir truly reports no absolute figures publicly.",2026-07-12
+ELANCO,https://www.elanco.com/,done,,2026-07-12
+ELEDA,https://www.eleda.se/,done,,2026-07-12
+ELEMENT MATERIALS,https://www.element.com/,done,,2026-07-12
+ELSAN,https://www.elsan.care/,done,,2026-07-12
+ENERGIZER HOLDINGS,https://www.energizerholdings.com/,done,Scope 2 basis not stated in report table (market-based add-on noted); recorded location-based inferred.,2026-07-12
+ENERGYSOLUTIONS,https://www.energysolutions.com/,needs_review,"No absolute Scope 1/2 figures published; ESG page qualitative only, no report. Doubtful no-disclosure - confirm no report exists off-site.",2026-07-12
+ENSEMBLE HEALTH,https://www.ensemblehp.com/,needs_review,No ESG/sustainability disclosure found for this private RCM services company. Doubtful no-disclosure - confirm no report exists.,2026-07-12
+ENVALIOR,https://www.envalior.com/,done,,2026-07-12
+ENVESTNET,https://www.envestnet.com/,done,,2026-07-12
+EQUINIX,https://www.equinix.com/,done,,2026-07-12
+ERM,https://www.erm.com/,done,,2026-07-12
+ETRAVELI,https://www.etraveligroup.com/,done,,2026-07-12
+EVERSANA,https://www.eversana.com/,done,,2026-07-12
+EW SCRIPPS,https://www.scripps.com/,done,,2026-07-12
+EXACT SOFTWARE,https://www.exact.com/,done,,2026-07-12
+EXAMWORKS,https://www.examworks.com/,done,,2026-07-12
+EXCLUSIVE NETWORKS,https://www.exclusive-networks.com/,done,,2026-07-12
+FIBERCOP,https://www.fibercop.it/,done,,2026-07-12
+FILTRATION GROUP,https://www.filtrationgroup.com/,done,,2026-07-12
+FIRST ADVANTAGE,https://fadv.com/,needs_review,2024 Sustainability Impact Report is bot-blocked on investors.fadv.com (curl reset/timeout) and too large for Firecrawl; needs manual download to extract Scope 1/2 values.,2026-07-12
+FIRST EAGLE HOLDINGS,https://www.firsteagle.com/,done,,2026-07-12
+FLUIDRA,https://www.fluidra.com/,done,,2026-07-12
+FONCIA GROUPE,https://fr.foncia.com/,needs_review,Foncia Groupe rebranded to Emeria; figures are Emeria France group-level for 2024 (Foncia not separately broken out) and were read from a ktCO2e chart. Identity/scope confirmation needed.,2026-07-12
+FORMULA ONE,https://www.formula1.com/,done,Latest F1 report is a reductions/percentages carbon update with no absolute Scope 1/2 split; absolute figures may exist in the older 2024 ESG Update if a reviewer wants them.,2026-07-12
+FORTREA,https://www.fortrea.com/,done,,2026-07-12
+FRONERI US INC,https://www.froneri.com/,needs_review,froneri.com is the global Froneri group site; figures are group-level (global JV) with no Froneri US Inc breakout - human ruling on entity scope.,2026-07-12
+FRONTIER COMMUNICATIONS,https://frontier.com/,done,,2026-07-12
+GALILEO GLOBAL EDUCATION,https://www.ggeedu.com/,done,,2026-07-12
+GATEGROUP,https://www.gategroup.com/,done,"Scope 1/2 converted from '1,000 tonnes' units; Scope 2 single figure labeled both location and market based.",2026-07-12
+GATES GLOBAL LLC,https://www.gates.com/,done,Scope 1/2 converted from 'thousand metric tons CO2e' units.,2026-07-12
+GENESYS CLOUD SERVICES,https://www.genesys.com/,done,,2026-07-12
+GRAHAM PACKAGING CO INC,https://www.grahampackaging.com/,done,,2026-07-12
+GRAY TELEVISION,https://gray.tv/,needs_review,"ESG report file inaccessible: gcs-web IR host bot-blocks curl/Firecrawl (only press release retrievable), /esg 404s, report otherwise only on banned aggregators. Scope 1/2 disclosure unconfirmed - manual retrieval needed.",2026-07-12
+GRIFFON CORP,https://www.griffon.com/,needs_review,ir.griffon.com bot-blocks curl (conn reset); values extracted from CY2024 report via Firecrawl but no original PDF saved. Scope 2 basis unstated (inferred location); units only 'tons' (metric unconfirmed). Verify + re-download manually.,2026-07-12
+HARD ROCK NORTHERN INDIANA,https://www.hardrockcasinonorthernindiana.com/,needs_review,Single casino property; no Scope 1/2 disclosure; parent privately held. Doubtful no-disclosure - needs human confirmation.,2026-07-12
+HAYWARD INDUSTRIES INC,https://www.hayward.com/,done,,2026-07-12
+HB FULLER,https://www.hbfuller.com/,done,"Combined Scope 1+2 only (146,000 tCO2e read off chart, rounded to 1,000); report does not split Scope 1 vs 2 (directs to CDP).",2026-07-12
+HBX GROUP,https://www.hbxgroup.com/,done,,2026-07-12
+HEARTLAND DENTAL,https://heartland.com/,done,,2026-07-12
+HERMAN MILLER INC,https://www.millerknoll.com/,done,,2026-07-12
+HIGHTOWER HOLDING LLC,https://hightoweradvisors.com/,done,,2026-07-12
+HILLMAN GROUP,https://www.hillmangroup.com/,done,,2026-07-12
+HIRERIGHT,https://www.hireright.com/,done,"Scope 1/2 derived from donut-chart percentages of a 39,332 tCO2e total (no absolute S1/S2 table); Scope 1 esp. coarse (0.02% rounding). Medium confidence.",2026-07-12
+HUB INTERNATIONAL LIMITED,https://www.hubinternational.com/,done,,2026-07-12
+HUNTER DOUGLAS,https://www.hunterdouglasgroup.com/,needs_review,"Group site (hunterdouglasgroup.com) is a thin corporate directory with no ESG/emissions report; only separate division domains (hunterdouglasarchitectural.com, hunterdouglascomponents.com) carry product-level sustainability content. Doubtful no-disclosure - human to rule whether any Hunter Douglas emissions report exists / whether a division counts.",2026-07-12
+HUSKY INTERNATIONAL,https://www.husky.co/,done,,2026-07-12
+HYPERION INSURANCE GROUP,https://www.howdengroupholdings.com/,done,,2026-07-12
+I HEART MEDIA,https://www.iheartmedia.com/,done,"No Scope 1/2 disclosure; own ESG/CR report and Impact Report both scanned full-text, no emissions figures.",2026-07-12
+IDEMIA,https://www.idemia.com/,needs_review,"Group fragmented into separate divisions (IST, IPS, Smart Identity) each with own 2025 CSR report; no consolidated group Scope 1/2. Divisional figures cited in note - human ruling needed on which/whether to aggregate.",2026-07-12
+IFCO,https://www.ifco.com/,needs_review,Absolute Scope 1/2 locked in a JS-interactive digital report (no downloadable PDF / no exposed URL); only % deltas on-page. Needs manual browser retrieval of the ESG Report 2025 appendix data tables.,2026-07-12
+IFS,https://www.ifs.com/,done,,2026-07-12
+II-VI INC,https://www.coherent.com/,done,Input II-VI INC matched to current name Coherent Corp. per batch input (II-VI rebranded to Coherent).,2026-07-12
+IMPERIAL DADE,https://www.imperialdade.com/,needs_review,Rebrand/merger: imperialdade.com now Imperial Brady (Imperial Dade + Brady Industries). No corporate Scope 1/2 disclosure (only customer GreenSafe product program). Identity needs confirmation.,2026-07-12
+INDICOR,https://www.indicor.com/,done,"Private holding company; site live, no ESG/sustainability reporting and no Scope 1/2 disclosure (only governance policy documents).",2026-07-12
+INEOS GROUP,https://www.ineos.com/,done,Scope 1/2 converted from Mt to tCO2e (13.8 Mt / 5.3 Mt market-based); coarse Mt-rounded source.,2026-07-12
+INFOPRO DIGITAL,https://www.infopro-digital.com/,done,,2026-07-12
+INNOMOTICS,https://www.innomotics.com/,done,Scope 1 converted from 12.8 kt; Scope 2 excluded by company as immaterial (100% carbon-neutral electricity).,2026-07-12
+INOVIE,https://www.inovie.fr/,done,,2026-07-12
+INSPIRED EDUCATION,https://inspirededu.com/,done,,2026-07-12
+INTEL,https://www.intel.com/,done,,2026-07-12
+INTERNET BRANDS,https://www.internetbrands.com/,done,,2026-07-12
+INTRAFI,https://www.intrafi.com/,done,,2026-07-12
+IRCA,https://www.ircagroup.com/,done,,2026-07-12
+ITP AERO,https://www.itpaero.com/,done,,2026-07-12
+IU GROUP,https://www.iu-group.com/,done,,2026-07-12
+IVANTI,https://www.ivanti.com/,done,,2026-07-12
+IVIRMA,https://www.ivirma.com/,done,,2026-07-12
+JANE STREET,https://www.janestreet.com/,done,,2026-07-12
+JANNEY MONTGOMERY SCOTT,https://www.janney.com/,needs_review,Subsidiary of Penn Mutual; no ESG disclosure on own site and no Penn Mutual Scope 1/2 report found via search - confirm no parent disclosure.,2026-07-12
+KANTAR,https://www.kantar.com/,needs_review,Figures are Kantar UK Limited entity only (SECR Carbon Reduction Plan); global Kantar group Scope 1/2 not separately published - human ruling needed on whether UK-entity figures represent the company.,2026-07-12
+KBR,https://www.kbr.com/,done,,2026-07-12
+KEREIS,https://www.kereis.com/,needs_review,"Private broker; only narrative CSR published, no absolute Scope 1/2 found. Possible non-public CSRD/DPEF report - confirm no disclosure.",2026-07-12
+KEYLOOP,https://keyloop.com/,needs_review,"Global group publishes intensity metrics only; absolute Scope 1/2 exist only for UK entity (SECR, p.12: ~Scope 2 469, Scope 1 67 tCO2e 2024). Human ruling needed on whether to use UK-only figures.",2026-07-12
+KILOUTOU,https://www.kiloutou-group.com/,done,,2026-07-12
+KINDRED AT HOME,https://www.centerwellhomehealth.com/,needs_review,"Reports under parent Humana; group-level 2025 Impact Report collected, no CenterWell/Kindred Scope 1/2 breakout (full-text grep, all hits inspected). Humana group values noted for reviewer.",2026-07-12
+LANDAL,https://www.landal.com/,needs_review,"Owned by Awaze (private); only green marketing content, no absolute Scope 1/2 and no report found for Landal or parent Awaze - confirm no disclosure.",2026-07-12
+LCI INDUSTRIES,https://www.lci1.com/,done,,2026-07-12
+LEGALSHIELD,https://www.legalshield.com/,done,,2026-07-12
+LGC GROUP,https://www.lgcgroup.com/,done,,2026-07-12
+LIFTOFF MOBILE INC,https://liftoff.io/,done,,2026-07-12
+LOXAM,https://www.loxam.com/,done,,2026-07-12
+LUMILEDS,https://www.lumileds.com/,done,,2026-07-12
+MADISON IAQ,https://madisoniaq.com/,needs_review,"Input domain madisoniaq.com rebranded/redirects to madisonair.com (Madison Air, part of private Madison Industries); full workflow rerun on successor domain found no ESG/GHG disclosure - identity/rebrand needs human confirmation.",2026-07-12
+MAGICLAB,https://magiclab.co/,needs_review,"MagicLab reports under successor/parent Bumble Inc. (magiclab.co redirects to team.bumble.com); values sourced from Bumble Inc. group-level 2024 Impact Report - parent/successor entity, identity needs human confirmation.",2026-07-12
+MCAFEE,https://www.mcafee.com/,done,,2026-07-12
+MEDIAN KLINIKEN,https://www.median-kliniken.de/,needs_review,"MEDIAN Kliniken (Germany) publishes no absolute Scope 1/2 figures; MEDIAN Group corporate ESG is qualitative-only and points to UK sibling Priory Group (whose carbon plan doesn't cover Germany). No group-level GHG report - doubtful no-disclosure, needs human ruling.",2026-07-12
+MEDIAWAN,https://www.mediawan.com/,needs_review,Large private French media group with no ESG/RSE/DPEF section anywhere on its own site or investor pages (all live-scraped) and none found via search - doubtful no-disclosure given its size/possible CSRD scope; needs human ruling.,2026-07-12
+MEDICAL SOLUTIONS,https://www.medicalsolutions.com/,done,,2026-07-12
+MEDIQ,https://mediq.com/,done,,2026-07-12
+MEDLINE,https://www.medline.com/,needs_review,Medline CDN 403-blocks direct download (curl + PowerShell); no original PDF saved. Scope 1/2 values extracted from Firecrawl-rendered content only - verify against original; Scope 2 basis not stated (inferred location).,2026-07-12
+MEDRISK,https://www.medrisknet.com/,done,"Only published figures are a 2021 inventory (Scope 1 = 0, Scope 2 = 695 tCO2e); Scope 2 basis inferred. A 2022 recalculation is mentioned but not disclosed.",2026-07-12
+MEHILAINEN,https://www.mehilainen.fi/,done,,2026-07-12
+MERLIN ENTERTAINMENTS,https://www.merlinentertainments.biz/,done,,2026-07-12
+MI WINDOWS AND DOORS INC,https://miwindows.com/,done,,2026-07-12
+MINIMAX VIKING,https://www.minimax-viking.com/,done,,2026-07-12
+MIRION,https://www.mirion.com/,done,Public co; latest disclosure is the 2023 CSR report which states GHG methodology still under development - no absolute Scope 1/2 figures. No newer report found.,2026-07-12
+MISTER CAR WASH,https://mistercarwash.com/,done,,2026-07-12
+MITCHELL INTERNATIONAL INC,https://www.mitchell.com/,needs_review,"Private company under parent Enlyte; no ESG/Scope 1-2 disclosure found on mitchell.com (alive, 623 pages, no ESG section) or via search of Mitchell/Enlyte incl. site:enlyte.com. Human to confirm no parent-group disclosure exists.",2026-07-12
+MJH LIFE SCIENCES,https://www.mjhlifesciences.com/,done,,2026-07-12
+MKS INSTRUMENTS,https://www.mks.com/,done,,2026-07-12
+MONBAKE,https://monbake.com/,done,,2026-07-12
+MORRISONS,https://www.morrisons-corporate.com/,done,,2026-07-12
+MOTEL ONE,https://www.motel-one.com/,done,,2026-07-12
+MSCI INC,https://www.msci.com/,done,,2026-07-12
+NEP GROUP,https://www.nepgroup.com/,done,,2026-07-12
+NEXSTAR,https://www.nexstar.tv/,done,,2026-07-12
+NIELSENIQ,https://nielseniq.com/,done,,2026-07-12
+NOBIAN,https://www.nobian.com/,done,,2026-07-12
+NORD ANGLIA,https://www.nordangliaeducation.com/,done,,2026-07-12
+NORGINE,https://norgine.com/,done,,2026-07-12
+NORMEC,https://normecgroup.com/,done,,2026-07-12
+NORTONLIFELOCK,https://www.gendigital.com/,done,,2026-07-12
+NOVATASTE,https://www.novataste.com/,done,,2026-07-12
+NVENT,https://www.nvent.com/,done,,2026-07-12
+OCS GROUP,https://www.ocs.com/,done,,2026-07-12
+OPELLA,https://www.opella.com/,done,,2026-07-12
+OPEN TEXT CORP,https://www.opentext.com/,done,,2026-07-12
+ORGANON,https://www.organon.com/,done,Scope 1/2 aggregated from three separately-reported boundaries (mfg/fleet/offices); company publishes no consolidated total.,2026-07-12
+OSAIC,https://osaic.com/,done,,2026-07-12
+OSTTRA,https://osttra.com/,needs_review,"Evidence is TriOptima business-unit ESG report (a brand within OSTTRA), not a group-level OSTTRA disclosure; no dedicated sustainability hub page exists on osttra.com - reports sit loose in wp-content, so latest confirmed by year label only. Entity scope needs human ruling.",2026-07-12
+OWENS & MINOR,https://www.owens-minor.com/,done,,2026-07-12
+OXBOW CARBON,https://www.oxbow.com/,done,,2026-07-12
+PAREXEL,https://www.parexel.com/,done,,2026-07-12
+PARQUES REUNIDOS,https://www.parquesreunidos.com/,done,,2026-07-12
+PAYSAFE,https://www.paysafe.com/,done,,2026-07-12
+PERATON CORP,https://www.peraton.com/,done,,2026-07-12
+PERFICIENT,https://www.perficient.com/,done,,2026-07-12
+PERRIGO,https://www.perrigo.com/,done,,2026-07-12
+PETSMART,https://www.petsmart.com/,done,,2026-07-12
+PG&E CORPORATION,https://www.pgecorp.com/,done,,2026-07-12
+PHARMANOVIA,https://www.pharmanovia.com/,needs_review,Latest published report (Sustainability Report 2024) is an interactive flipbook at pharmanovia.com/sustainability-report/ with no extractable/downloadable PDF; recorded Scope 1/2 values are from the older 2023 ESG In Review mini-report. Human should confirm 2024 figures from the interactive report.,2026-07-12
+PHENNA GROUP,https://www.phennagroup.com/,done,,2026-07-12
+PHM GROUP,https://www.phmgroup.com/,done,,2026-07-12
+PLANET,https://www.weareplanet.com/,done,,2026-07-12
+PODS,https://www.pods.com/,done,,2026-07-12
+POINTCLICKCARE,https://pointclickcare.com/,done,,2026-07-12
+PRESIDIO HOLDINGS INC,https://www.presidio.com/,done,,2026-07-12
+PRO MACH,https://www.promachbuilt.com/,done,,2026-07-12
+PYE-BARKER,https://pyebarkerfire.com/,done,,2026-07-12
+QUEST SOFTWARE,https://www.quest.com/,done,,2026-07-12
+QXO,https://www.qxo.com/,needs_review,Scope 1/2 sourced from subsidiary Beacon Roofing Supply's 2023 CSR report (pre-acquisition; QXO acquired Beacon Apr 2025); QXO publishes no own report yet. Childco/pre-acquisition source + entity-identity ruling requires human review.,2026-07-12
+RACKSPACE HOSTING INC,https://www.rackspace.com/,done,,2026-07-12
+RADNET MANAGEMENT INC,https://www.radnet.com/,done,,2026-07-12
+RAISING CANES,https://www.raisingcanes.com/,done,,2026-07-12
+RAMSAY SANTE,https://ramsaysante.eu/,done,,2026-07-12
+RAMUDDEN,https://www.ramudden.com/,needs_review,Assigned domain ramudden.com down at collection (two attempts). Company reports via group site ramuddenglobal.com but Annual Report 2025 and Sustainability Report 2023 are issuu flipbook-only and not minable (issuu API access-denied). Manual retrieval of Scope 1/2 from the issuu report needed; also confirm entity/domain.,2026-07-12
+RCN GRANDE WAVE,https://www.astound.com/,done,,2026-07-12
+REALPAGE INC,https://www.realpage.com/,done,,2026-07-12
+REFRESCO,https://www.refresco.com/,done,,2026-07-12
+RESIDEO TECHNOLOGIES INC,https://www.resideo.com/,done,,2026-07-12
+RESTAURANT BRANDS IBERIA,https://www.rbi.com.es/,needs_review,"Identity/rebrand: input domain rbi.com.es dead; RBI now operates as RB Europe (rbeurope.com) - confirm entity. Figures are Grupo RBE (Spain+Portugal owned ops) from its 2024 Memoria de Sostenibilidad, p.97.",2026-07-12
+RESTORATION HARDWARE,https://rh.com/,done,,2026-07-12
+ROCKET SOFTWARE,https://www.rocketsoftware.com/,done,,2026-07-12
+RODAN & FIELDS,https://www.rodanandfields.com/,needs_review,ESG report published ~2023 (per company social media) but not retrievable on current site (impact page has no link; env-FAQ PDF returns 403 bot-block). Manual/browser retrieval needed to confirm whether any Scope 1/2 figures exist.,2026-07-12
+RODENSTOCK,https://www.rodenstock.com/,needs_review,Doubtful no-disclosure: large German optics co (Apollo-owned) but public site is thin (179 URLs) with no sustainability section; any corporate/CSRD reporting may sit off this consumer domain. Human verification suggested.,2026-07-12
+ROVENSA,https://www.rovensagroup.com/,needs_review,"Domain: input rovensagroup.com dead; data from official rovensa.com (Rovensa Group) - confirm entity. Scope 2 basis (market-based) inferred from prior-year convention + reconciliation, not stated explicitly in FY24/25 exec summary.",2026-07-12
+RUBIX GROUP,https://rubix.com/,needs_review,Bot-blocked (DataDome): FY2024 ESG report + 2024 GHG assurance PDFs cannot be downloaded (curl 403 + Firecrawl challenge + no Wayback copy). Limited-assured Scope 1/2 figures exist but require a manual real-browser download to extract.,2026-07-12
+RV RETAILER,https://www.bluecompassrv.com/,done,,2026-07-12
+RYAN SPECIALTY GROUP,https://ryanspecialty.com/,done,,2026-07-12
+SABRE HOLDINGS,https://www.sabre.com/,done,,2026-07-12
+SALT MOBILE,https://www.salt.ch/,needs_review,"Doubtful no-disclosure: aggregators list Salt's FY2024 Scope 1/2 but no company-published source found on salt.ch (sustainability page = policies only; 1,633pp annual report has no GHG). Verify whether Salt discloses via CDP or a report not hosted on-site.",2026-07-12
+SANDISK,https://www.sandisk.com/,needs_review,SanDisk (spun off from Western Digital Feb 2025) announces an inaugural FY2025 report but its PDF link 404s; only available report is the predecessor Western Digital consolidated FY2024 report (no standalone SanDisk breakout). Re-check for the FY2025 report once the link is fixed.,2026-07-12
+SANTE CIE,https://www.sante-cie.com/,needs_review,Input domain www.sante-cie.com dead; substituted santecie.com via search (identity confirmed as Sante Cie home-healthcare group). No absolute Scope 1/2 published. Human to confirm domain substitution and the no-disclosure finding.,2026-07-12
+SAVERS,https://www.savers.com/,done,,2026-07-12
+SCHON KLINIKEN,https://www.schoen-klinik.de/,done,,2026-07-12
+SCIENTIFIC GAMES,https://www.scientificgames.com/,done,,2026-07-12
+SEBIA,https://www.sebia.com/,needs_review,"Group (sebia.com) publishes no absolute group-wide Scope 1/2 (first GHG report underway on 2024 data). Only the UK subsidiary reports absolute figures (Scope 1 53.18 / Scope 2 7.94 tCO2, 2025) - country subset only. Human to decide whether UK-only figures should be recorded or the group report awaited.",2026-07-12
+SEDGWICK,https://www.sedgwick.com/,needs_review,"First Sustainability Report announced (LinkedIn, ~Oct 2025) but not published/discoverable on sedgwick.com; needs manual retrieval to confirm whether it carries Scope 1/2 figures.",2026-07-12
+SELECT MEDICAL,https://www.selectmedical.com/,done,,2026-07-12
+SHEARERS FOODS LLC,https://www.shearers.com/,needs_review,FY24 Impact Report announced on LinkedIn/Facebook but not hosted on the company's own public site; needs manual retrieval to confirm Scope 1/2 disclosure.,2026-07-12
+SHIFT 4 PAYMENTS,https://www.shift4.com/,done,,2026-07-12
+SIMON & SCHUSTER,https://www.simonandschuster.com/,done,,2026-07-12
+SINCLAIR BROADCASTING,https://sbgi.net/,done,,2026-07-12
+SIVANTOS,https://www.wsa.com/,needs_review,Identity: input brand 'Sivantos' is a legacy brand now part of WS Audiology (2019 Sivantos-Widex merger); figures are WSA group-level. Confirm entity mapping.,2026-07-12
+SIX FLAGS INC,https://www.sixflags.com/,needs_review,"Evidence is predecessor entity Cedar Fair's 2022 first ESG report (pre-merger, stale, no Scope 1/2 inventory); merged Six Flags Entertainment Corp has issued no newer sustainability report. Confirm no Scope 1/2 disclosure exists for the merged entity.",2026-07-12
+SKECHERS,https://www.skechers.com/,done,,2026-07-12
+SOCOTEC,https://www.socotec.com/,done,,2026-07-12
+SOLERA,https://www.solera.com/,needs_review,Doubtful no-disclosure: sizeable company with no corporate Scope 1/2 report; only product-marketing sustainability content. Verified via map+scrape+search (site confirmed live).,2026-07-12
+SOLINA,https://www.solina.com/,done,,2026-07-12
+SOPHOS,https://www.sophos.com/,done,,2026-07-12
+SOUTHERN VET PARTNERS,https://www.southernvetpartnersllc.com/,needs_review,"Input domain stale; rebranded to Mission Pet Health (missionpethealth.com) - identity needs confirmation. No ESG/GHG disclosure on successor site (homepage live-scraped; 168 URLs mapped, none ESG-related).",2026-07-12
+SPECTRIS,https://www.spectris.com/,done,,2026-07-12
+SRAM LLC,https://www.sram.com/,done,,2026-07-12
+SS&C TECHNOLOGIES,https://www.ssctech.com/,done,,2026-07-12
+STARS GROUP,https://www.flutter.com/,needs_review,"Reports under parent Flutter Entertainment; group-level Climate Report 2025 collected; no Stars-specific Scope 1/2 breakout (group figures for reference: S1 5,107 / S2 loc 22,604 / S2 mkt 0 tCO2e).",2026-07-12
+STELLAGROUP,https://www.stellagroup.fr/,needs_review,Input domain stellagroup.fr does not resolve; company's live site is stella.group - identity/domain correction needs human confirmation. Data quality high (exact figures from KPI table).,2026-07-12
+STEPSTONE GROUP,https://www.stepstonegroup.com/,needs_review,"Scope 1/2 measured & limited-assured for 2025 but absolute figures are behind a country/role gate in the interactive 2025 Responsible Investment Report; CA AB 1305 disclosure (confirms measurement, states no tonnage) is Incapsula bot-blocked to direct download. Human retrieval needed for the figures.",2026-07-12
+STUBHUB,https://www.stubhub.com/,done,,2026-07-12
+SURGERY PARTNERS,https://www.surgerypartners.com/,needs_review,"Public co, no ESG/Scope 1-2 disclosure found on site or via search; named in investor (Bain Capital) ESG report with no company-specific figures. Doubtful no-disclosure.",2026-07-12
+SUSE,https://www.suse.com/,done,,2026-07-12
+SWISSPORT,https://www.swissport.com/,needs_review,Claims SBTi-validated Scope 1/2/3 reporting but no absolute figures in any accessible public report/page - only targets; figures likely non-public (EcoVadis). Doubtful no-disclosure.,2026-07-12
+SYNEOS,https://www.syneoshealth.com/,done,,2026-07-12
+SYNLAB,https://www.synlab.com/,done,,2026-07-12
+SYNTEGON,https://www.syntegon.com/,done,,2026-07-12
+T MOBILE,https://www.t-mobile.com/,done,,2026-07-12
+TALLGRASS ENERGY,https://www.tallgrass.com/,needs_review,Operating midstream energy co. with material emissions but only CR goals/targets published; no absolute Scope 1/2 figures or data report found. Doubtful no-disclosure.,2026-07-12
+TAMKO BUILDING PRODUCTS,https://www.tamko.com/,done,,2026-07-12
+TARKETT,https://www.tarkett-group.com/,done,,2026-07-12
+TEAM.BLUE,https://team.blue/,done,,2026-07-12
+TECHEM,https://www.techem.com/,done,,2026-07-12
+TELENET,https://www.telenet.be/,done,,2026-07-12
+TENET HEALTH,https://www.tenethealth.com/,needs_review,No GHG disclosure: report explicitly states emissions not disclosed. Evidence no longer linked from live investor site (ESG section removed); pulled from company's own CDN.,2026-07-12
+THOR INDUSTRIES,https://www.thorindustries.com/,done,,2026-07-12
+THYSSENKRUPP,https://www.thyssenkrupp.com/,done,,2026-07-12
+TKO,https://tkogrp.com/,needs_review,No GHG disclosure by a large NYSE-listed company (UFC/WWE): AR2025 has no GHG data; no ESG report or sustainability pages found. Confirm no disclosure.,2026-07-12
+TMF GROUP,https://www.tmf-group.com/,needs_review,"No absolute Scope 1/2 figures published; AR2025 sustainability section narrative-only, figures deferred to a forthcoming 2025 ESG report. Confirm no disclosure.",2026-07-12
+TMS INTERNATIONAL,https://www.tmsinternational.com/,needs_review,No-disclosure for an operating company: private steel-services firm with no ESG report; only a qualitative environment page. Confirm no disclosure.,2026-07-12
+TORY BURCH,https://www.toryburch.com/,done,,2026-07-12
+TRAEGER,https://www.traeger.com/,done,,2026-07-12
+TRANS UNION,https://www.transunion.com/,done,,2026-07-12
+TRANSDIGM INC,https://www.transdigm.com/,done,,2026-07-12
+TRAVELODGE LIMITED,https://www.travelodge.co.uk/,done,,2026-07-12
+TRICOR,https://www.vistra.com/,needs_review,"Input domain vistra.com is parent Vistra Group (corporate services), which publishes no own Scope 1/2 report; Tricor's own inaugural 2020-2021 ESG report (tricorglobal.com) is a non-downloadable Issuu flipbook with no extractable figures and is ~5 yrs old. Identity/parent + non-original evidence - human check advised.",2026-07-12
+TRIPADVISOR,https://www.tripadvisor.com/,needs_review,"Doubtful no-disclosure for a large public company: no ESG/sustainability report or Scope 1/2 figures found anywhere on Tripadvisor Inc's own domains despite an exhaustive check (main-site map, social-impact page, IR home + governance, IR /corporate-responsibility 404, two figure searches). Human check advised.",2026-07-12
+TSG SOLUTIONS,https://www.tsg-solutions.com/,done,,2026-07-12
+ULTIMATE SOFTWARE,https://www.ukg.com/,needs_review,"Ultimate Software reports under merged successor UKG (Ultimate Kronos Group); figures are group-level UKG (former Ultimate Software + Kronos), not Ultimate-Software-specific - identity/successor confirmation advised.",2026-07-12
+UNITED AIRLINES,https://www.united.com/,done,,2026-07-12
+UNITED NATURAL FOODS INC,https://www.unfi.com/,done,,2026-07-12
+UNITED PET FOODS,https://www.unitedpetfood.eu/,done,,2026-07-12
+UNITED TALENT AGENCY,https://www.unitedtalent.com/,done,,2026-07-12
+UNIVISION COMMUNICATIONS INC.,https://corporate.televisaunivision.com/,needs_review,"No Scope 1/2 disclosure found on TelevisaUnivision's own corporate site despite exhaustive map (2,993 URLs) + search; CSR page qualitative only. Grupo Televisa (televisair.com, ~minority stakeholder / related entity) publishes its own sustainability report but it does not cover TelevisaUnivision. Human to confirm whether TelevisaUnivision discloses emissions elsewhere (e.g., IR ESG page) or whether Grupo Televisa's report is the intended source.",2026-07-12
+URBASER,https://www.urbaser.com/,done,,2026-07-12
+US ANESTHESIA PARTNERS,https://www.usap.com/,done,,2026-07-12
+US FERTILITY ENTERPRISES,https://www.usfertility.com/,done,,2026-07-12
+UTZ QUALITY FOODS,https://www.utzsnacks.com/,done,,2026-07-12
+UVEX,https://www.uvex-group.com/,done,,2026-07-12
+VALEO FOODS,https://www.valeofoods.com/,done,,2026-07-12
+VDK GROEP,https://www.vdkgroep.com/,done,,2026-07-12
+VEONET,https://www.veonet-group.com/,done,,2026-07-12
+VERISURE,https://www.verisure.com/,done,,2026-07-12
+VERSCEND,https://www.cotiviti.com/,needs_review,Rebrand Verscend->Cotiviti (identity needs human confirmation); no Scope 1/2 disclosure found on cotiviti.com (only a philanthropy CSR page); private company.,2026-07-12
+VERTEX AEROSPACE,https://gov2x.com/,needs_review,Rebrand Vertex Aerospace->V2X Inc (identity needs human confirmation); no Scope 1/2 disclosure (10-K annual report has none; no ESG report published).,2026-07-12
+VFS GLOBAL,https://www.vfsglobal.com/,done,,2026-07-12
+VICTORY CAPITAL,https://www.vcm.com/,done,,2026-07-12
+VIRGIN MEDIA IRELAND,https://www.virginmedia.ie/,needs_review,"Values sourced from parent Liberty Global's group report (VMI subsidiary breakout, p.35, KPMG-assured) - parent/subsidiary reporting requires human ruling per policy.",2026-07-12
+VIRTU FINANCIAL,https://www.virtu.com/,needs_review,Absence-based no-disclosure for a public company (NASDAQ: VIRT); no explicit 'we don't report' statement and a historical 2019 CSR section exists - flag for human confirmation that no recent GHG disclosure exists.,2026-07-12
+VIRTUSA,https://www.virtusa.com/,done,,2026-07-12
+VISTRA ZERO,https://www.vistracorp.com/vistra-zero/,done,,2026-07-12
+VIVID SEATS,https://www.vividseats.com/,done,,2026-07-12
+WARNER MUSIC GROUP,https://www.wmg.com/,done,,2026-07-12
+WASSERMAN,https://www.teamwass.com/,needs_review,Input domain teamwass.com stale - 301-redirects to rebranded site the.team (identity needs human confirmation); collected report is a climate-risk framework with no absolute Scope 1/2 figures.,2026-07-12
+WEBER STEPHEN PRODUCTS LLC,https://www.weber.com/,done,,2026-07-12
+WELLA,https://www.wellacompany.com/,done,,2026-07-12
+WELLS FARGO AM,https://www.allspringglobal.com/,needs_review,"Rebrand - Wells Fargo Asset Management became Allspring Global Investments; identity/continuity needs human confirmation. Scope 2 'market' value is an 'advanced grid study' (hourly-matched) figure, not standard contractual market-based.",2026-07-12
+WESTJET,https://www.westjet.com/,needs_review,"Major operating airline that previously published sustainability reports with Scope 1/2, but current live site has no absolute figures (only narrative + a Modern Slavery statement); doubtful no-disclosure - worth human confirmation.",2026-07-12
+WHATABURGER,https://whataburger.com/,done,,2026-07-12
+WIDE OPEN WEST,https://www.wowway.com/,needs_review,ESG report existed historically but company went private (Dec 31 2025); ir.wowway.com now 403 and report is not on any live company-owned source - only banned aggregators. Needs manual retrieval/ruling.,2026-07-12
+WILSONART,https://www.wilsonart.com/,needs_review,Bot-blocked: raw PDF returns 403 (AWS ELB WAF) to all direct download clients; values sourced from Firecrawl-scraped content of the company's own 2023 report. Re-fetch from an unblocked network to save the deliverable.,2026-07-12
+WINDSTREAM,https://www.windstream.com/,needs_review,"Reports under parent Uniti Group (2025 merger); collected Uniti group 2024 ESG report - no Windstream/Kinetic breakout (full-text grep, all 17 pages, 0 hits). Human ruling needed on whether to use Uniti group figures or Windstream's stale 2021 standalone report.",2026-07-12
+WOOD MACKENZIE,https://www.woodmac.com/,done,,2026-07-12
+WORKDAY,https://www.workday.com/,done,,2026-07-12
+WORLDPAY,https://www.worldpay.com/,needs_review,Raw PDF unreachable to direct download (host blocks this IP); values sourced from Firecrawl-scraped content of the company's own Carbon Reduction Plan. Figures are UK-operations-only. Re-fetch from an unblocked network to save the deliverable.,2026-07-12
+XELLA,https://www.xella.com/,done,,2026-07-12
+XSYS,https://www.xsysglobal.com/,needs_review,Doubtful no-disclosure: XSYS holds a CDP Climate score B (Scope 1/2 data exists on CDP's platform) but publishes no absolute figures on its own site. Verify via CDP if figures are required.,2026-07-12
+YOUR.WORLD,https://your.world/,needs_review,"Holding company with no own-site ESG disclosure (complete sitemap, site alive); subsidiary team.blue may publish group figures - human ruling needed on the reporting entity.",2026-07-12
+ZAYO,https://www.zayo.com/,done,,2026-07-12
+ZENTIVA,https://www.zentiva.com/,done,,2026-07-12

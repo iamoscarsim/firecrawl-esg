@@ -1,0 +1,8 @@
+# Contains a Firecrawl API key — never commit (see CLAUDE.md)
+skills.md
+
+# Large collected deliverables and scratch cache — regenerable, too big for git
+cache/
+companies/
+runs/*/cache/
+runs/*/companies/
